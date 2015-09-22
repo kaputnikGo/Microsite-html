@@ -1,0 +1,604 @@
+/*****************************
+	Micro site - bod v1.6
+*****************************/
+
+  body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+    min-width: 320px;
+	}
+  a img {
+		outline : none;
+	}
+  a {
+  color:#ae0024;
+  }
+	img {
+		border : 0;
+	}
+  p {
+    color:#000000;
+	font-weight: 400; 
+	font-size: 16px;
+	line-height: 1.6;
+  }
+  li {
+    color:#000000;
+    font-weight: 400; 
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom:15px;
+  }
+  input {
+    -webkit-appearance: none;
+  }
+  .quoter {
+    font-weight: 700;
+    text-align: right;
+    float: right;
+  }
+  h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #0e0a64;
+    text-align: center;
+    padding: 12px 4%;
+    margin: 0;
+    line-height: 1.2;
+  }
+  h1.getStarted {
+    font-size: 50px;
+    font-weight: 700;
+    color: #0e0a64;
+    text-align: center;
+    padding: 12px 4% 0px 4%;
+    margin: 0;
+    line-height: 1;
+    text-decoration: underline;
+  }
+  h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0e0a64;
+    text-align: center;
+    padding: 15px 10% 0px 10%;
+    margin: 0;
+    line-height: 1.2;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0e0a64;
+    text-align: center;
+    margin: 0;
+    line-height: 1.2;
+  }
+  .sidebarHeading {
+    text-align:left;
+  }
+  h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0e0a64;
+    text-align: center;
+    padding: 12px 24px;
+    margin: 0;
+  }
+  
+  .colorBlue {
+    color:#0e0a64;
+  }
+  .imageHeading {
+    margin-bottom:15px;
+  }
+  #pageWrapper {
+    width: 100%;
+    min-width: 320px;
+  }
+  #bandapart {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #0b0755;
+    z-index: 10;
+  }
+  #mainContentWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    background-image: url("images/bg-texture.jpg");
+    background-repeat: repeat;
+    background-position: left top;
+    background-attachment: scroll;
+    z-index: 20;
+  }  
+.centerFloat {
+    position: relative;
+    width: 94%;
+    max-width: 1100px;
+    height: 100%;
+    min-height: 990px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    z-index: 1000;
+    box-shadow: 0 0 15px #666;
+  }
+  #navbar {
+    width: 92%;
+    height: 80px;
+    min-height: 80px;
+    background-color: #0e0a64;
+    margin-top: -60px;
+    margin-bottom: 36px;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  #navbar img {
+    float: left;
+    box-shadow: 0 0 15px #666666;
+  }
+  #navbarLinkContainer {
+    padding-top: 24px;
+    float: right;
+    background-color: #0e0a64;
+  }
+  .navbarLink {
+    padding: 5px;
+    float: left;
+  }
+  #navbar a {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  #navbar a:hover {
+    text-decoration: underline;
+  }
+  #currentPage a {
+    color: #CCC;
+    font-style: italic;
+  }
+  #centralContainer {
+    width: 90%;
+    height: 100%;
+    padding: 24px 4% 2px;
+  } 
+  #leftContentContainer {
+    width: 54%;
+    height: 100%;
+    background-color: #ffffff;
+    float: left;
+    margin-bottom: 160px;
+    padding: 4%;
+    padding-right: 2%;
+   }
+  .mainAdvert {
+    width: 90%;
+    background-color: #ffffff;
+    box-shadow: 0 0 6px #cccccc;
+    padding: 4%;
+    margin-bottom: 2px;
+  }
+   .innerSidebar {
+    width: 42%;
+    float: right;
+    background-color: #ffffff;
+    box-shadow: 0 0 6px #cccccc;
+    padding: 2% 4%;
+    margin-bottom: 2px;
+    margin-left: 20px;
+  }
+  .mainAdvert p {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+  .mainAdvert h2 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    color: #0e0a64;
+    padding: 6px 0;
+    margin: 0;
+    line-height: 1.2;
+  }
+  .mainAdvert h3 {
+    width: 190px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #0e0a64;
+    margin: 0;
+    padding: 0;
+  }
+  .mainAdvert h4 {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #0e0a64;
+    margin: 0;
+    padding: 0;  
+    line-height: 1.2;
+  }
+  .mainAdvert img {
+    display: inline-block;
+    width: 110px;
+    height: auto;
+    padding: 4px;
+    padding-bottom: 40px;
+    float: left;
+    margin-right: 12px;
+  }
+  .redIntro {
+    color: #ae0024;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;    
+  }
+  .advertCentered {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+  .redClaim {
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    color: #ae0024; 
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+  }
+  #biggerClaim {
+    width: 100%;
+  }
+  .mainAdvert a {
+    color: #ae0024;
+    font-weight: 700;
+    text-decoration: underline;
+  } 
+  #headingContainer {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  #headingContainer img {
+    width: 100%;
+    height: auto;
+  }
+  .mainlink {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ae0024;
+    text-decoration: underline;
+    text-align: center;
+    padding: 0px 24px;
+  }
+  .mainlink a {
+    color: #ae0024;
+  }
+  #rightContentContainer { 
+    width: 32%;
+    height: 100%;
+    background-color: #ffffff;
+    float: left;
+    padding: 4%;
+    padding-left: 2%;
+    padding-right: 6%;
+  }
+  .sidebarAdvert {
+    width: 320px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 6px #cccccc;
+    padding: 4%;
+    margin-bottom: 16px;
+}
+  .sidebarAdvert h3 {
+    display: inline-block;
+    width: 190px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #0e0a64;
+    margin: 0;
+    padding: 0;
+  }
+  .sidebarAdvert img {
+    display: inline-block;
+    width: 90px;
+    height: auto;
+    padding: 4px;
+    float: right;
+  }
+  .sidebarAdvert a {
+    color: #ae0024;
+    font-weight: 700;
+    text-decoration: underline;
+  } 
+  .quoteBlock {
+    width: 320px;
+    /*padding: 4%;*/
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+  #footerContainer {
+    width: 100%;
+    background-color: #0e0a64;
+    padding-top: 24px;
+    position: absolute;
+    bottom: 0;
+  }
+  #footerLogo {
+    width: 124px;
+    margin: 0 auto 18px;
+  }
+  hr#footer {
+    color: #c2c1d8;
+    width: 80%;
+    height: 1px;
+    margin: 12px auto;
+  }
+  #footerLinkContainer {
+    width: 90%;
+    max-width: 360px;
+    min-height: 60px;
+    margin: 0 auto; 
+  }
+  .footerLink {
+    padding: 5px;
+    float: left;
+  }
+  #footerContainer a {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  #footerContainer a:hover {
+    text-decoration: underline;
+  }
+  #footapart {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #0b0755;
+    z-index: 10;     
+  }
+.centerFloat #leftContentContainer p {
+}
+
+/* popup styling */
+#sign_up {
+  -moz-border-radius: 6px;
+  background: #ffffff;
+  -webkit-border-radius: 6px;
+  border-radius: 12px;
+  -webkit-box-shadow: rgba(0,0,0,.6) 0px 2px 12px;
+  -moz-box-shadow:  rgba(0,0,0,.6) 0px 2px 12px;
+  width: 400px;
+  height: 400px !important;
+  position: relative;
+  display: none;
+}
+#sign_up_banner {
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 12px 12px 0 0;
+}
+#sign_up #sign_up_form {
+  background-color: #0e0a64;
+  border-radius: 0 0 12px 12px;
+}
+#close_x { 
+  width: 30px; 
+  height: 30px;
+  overflow: hidden; 
+  display: block;
+  position: absolute; 
+  color: #ff0000;
+  font-size: 24px;
+  top: 5px; 
+  right: 5px;
+}
+#sign_up label {
+  display: block;
+  margin-bottom: 10px; 
+  color: #536376;
+  font-size: .9em;
+}
+#sign_up label input {
+  display: block;
+  width: 303px;
+  height: 24px;
+  margin: 0 auto;
+  background-position: -201px 0;
+  padding: 2px 8px;
+  font-size: 1.2em;
+  line-height: 31px;
+} 
+#left_out {
+  background-position: -202px -158px;
+  width: 113px; 
+  height: 16px;
+}
+#sign_up_form {
+  position: relative;
+  padding-bottom: 40px;
+  padding-top: 24px;
+  /*margin-bottom: 12px;*/
+}
+#popupSubmit {
+  display: block;
+  position: relative;
+  width: 323px;
+  height: 40px;    
+  padding: 12px;
+  padding-bottom: 18px;
+  margin: 0 auto;
+  background-color: #c40d29;
+  border: 0;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+}
+#popupSubmit:hover {
+  background: #c20700;
+}
+   
+/******* media queries ********/		
+  @media screen and (max-width: 980px) {
+    #navbar {
+      height: 100%;
+    }
+    #navbarLinkContainer {
+      float: right;
+      width: 70%;
+    }
+    .navbarLink {
+      float: left;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }  
+  @media screen and (max-width: 860px) {
+    .bandapart {
+      height: 100%;
+      min-height: 60px;
+      padding-bottom: 12px;
+    }
+    #navbar {
+      height: 100%;
+    }
+    #navbarLinkContainer {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+    }
+    #centralContainer {
+      padding-top: 0;
+    }
+    #leftContentContainer {
+      width: 90%;
+      float: none;
+      margin: 0 auto;
+      padding: 0 4% 4%;
+    }
+    #rightContentContainer {
+      width: 90%;
+      float: left;
+      padding: 0 4%;
+      margin: 0 auto 24px;
+      margin-bottom: 160px;
+    }
+    .sidebarAdvert {
+      width: 80%;
+      height: 100%;
+      margin: 12px auto;
+    }
+    .sidebarAdvert h3 {
+      width: 70%;
+    }
+    .quoteBlock {
+      width: 80%;
+      margin: 12px auto 24px;
+    }
+    #footerLinkContainer {
+      width: 98%;
+    }
+  }
+  @media screen and (max-width: 580px) {
+    .sidebar {
+      width: 92%;
+      float: right;
+      background-color: #ffffff;
+      box-shadow: 0 0 6px #cccccc;
+      padding: 4%;
+      margin-bottom: 2px;
+      margin-left: 20px;
+    } 	  
+    .sidebarAdvert h3 {
+      width: 60%;
+    }
+    #footerLinkContainer {
+      float: none;
+      margin: 0 auto;        
+    }
+    .footerLink {
+      float: none;
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+@media screen and (max-width: 480px) {
+	#sign_up {
+    width: 90%;
+  }
+  #sign_up label input {
+    width: 90%;
+  }
+  #popupSubmit {
+    width: 90%;
+  }
+  #sign_up_banner img {
+    display: none;
+  }
+  .sidebar {
+    width: 92%;
+    float: right;
+    background-color: #ffffff;
+    box-shadow: 0 0 6px #cccccc;
+    padding: 4%;
+    margin-bottom: 2px;
+    margin-left: 20px;
+  }  
+  #navbarLinkContainer {
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .navbarLink {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .sidebarAdvert {
+    text-align: center;
+  }
+  .sidebarAdvert img {
+    display: none;
+  }
+  .sidebarAdvert p {
+    text-align: center;
+  }
+  .sidebarAdvert h3 {
+    width: 100%;
+    text-align: center;
+  }
+  .sidebarAdvert a {
+    text-align: center;
+  }
+  #footerLinkContainer {
+    float: left;
+    width: 100%;
+    margin: 0 auto;        
+  }
+  .footerLink {
+    float: none;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

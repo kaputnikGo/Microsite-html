@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Microsite Template - order</title>  
+	<meta name="keywords" content="" />
+	<meta name="description" content="" /> 
+  <link rel="stylesheet" href="micro.css" type="text/css" media="all" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+
+<div id ="pageWrapper">
+  <div id="mainContentWrapper">
+    <div id="bandapart">&nbsp;</div>
+<div id="linkWrapper">  
+    <div class="centerFloat">
+      <div id="navbar">
+        <a href="index.html"><img src="images/logo-header.jpg" alt="Microsite logo" /></a>
+        <div id="navbarLinkContainer">
+          <div class="navbarLink"> 
+            <a href="index.html">Index</a>
+          </div>        
+          <div class="navbarLink"> 
+            <a href="about1.html">About 1</a>
+          </div>
+          <div class="navbarLink">
+            <a href="about2.html">About 2</a>
+          </div>
+          <div class="navbarLink">          
+            <a href="about3.html">About 3</a>
+          </div>
+          <div class="navbarLink">          
+            <a href="faq.html">FAQ</a>
+          </div>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+
+<!-- END BOD HEADER AREA -->
+<iframe id="orderFrame" src="http://127.0.0.1/microsite/" style="position: absolute; top: 84px; bottom: 120px; width:100%; height:76%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
+    Your browser doesn't support iframes
+</iframe>
+     
+      <div id="footerContainer">
+        <div id="footerLogo">
+          <img src="images/logo-footer.png" alt="microsite logo" />
+        </div >
+        <hr id="footer" />
+        <div id="footerLinkContainer"> 
+          <div class="footerLink"> 
+            <a href="contact-us.html">Contact Us</a>
+          </div>
+          <div class="footerLink"> 
+            <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+          </div>
+          <div class="footerLink"> 
+            <a href="privacy-policy.html">Privacy Policy</a>
+          </div>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </div><!-- end centerFloat -->
+    
+</div> <!-- end linkWrapper -->
+
+    <div id="footapart">&nbsp;</div>    
+  </div><!-- end mainContentWrapper -->
+</div><!-- end pageWrapper -->
+
+<!-- scripts for appending src var to a links within div id="linkWrapper" -->
+<script src="js/query-string-append.js"></script>
+<script>
+<!-- add query string to the iframe here -->
+if (QueryString.src) document.getElementById('orderFrame').src = "http://127.0.0.1/microsite/"+ QueryString.src;
+$('#linkWrapper a').attr('href', function(){ return this.href.concat('?src=' + ((QueryString.src) ? QueryString.src : '888888'))})
+</script>
+
+</body>
+</html>   
