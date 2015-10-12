@@ -43,9 +43,9 @@
       </div>
 
 <!-- END BOD HEADER AREA -->
-<iframe id="orderFrame" src="http://127.0.0.1/microsite/" style="position: absolute; top: 84px; bottom: 120px; width:100%; height:76%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
-    Your browser doesn't support iframes
-</iframe>
+<div style="width: 60%; height: 100%; margin: 0 auto;">
+redirecting to our secure server now...
+</div>
      
       <div id="footerContainer">
         <div id="footerLogo">
@@ -76,10 +76,18 @@
 <!-- scripts for appending src var to a links within div id="linkWrapper" -->
 <script src="js/query-string-append.js"></script>
 <script>
-<!-- add query string to the iframe here -->
-if (QueryString.src) document.getElementById('orderFrame').src = "http://127.0.0.1/microsite/"+ QueryString.src;
+
 $('#linkWrapper a').attr('href', function(){ return this.href.concat('?src=' + ((QueryString.src) ? QueryString.src : '888888'))})
 </script>
+<script>
+// change for http request of https content is insecure
+if (QueryString.src) {
+  window.location.assign('https://127.0.0.1/microsite/'+ QueryString.src);
 
+}
+else {
+  window.location.assign('https://127.0.0.1/microsite/888888'); 
+}
+</script>
 </body>
 </html>   
